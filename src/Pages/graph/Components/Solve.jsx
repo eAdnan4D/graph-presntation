@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import CheckNode from "./CheckNode";
 import Empty from "./Empty";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 import Header from "./Header";
 import SolveBtn from "./SolveBtn";
 
@@ -88,7 +88,11 @@ function Solve() {
             )}
           </div>
         )}
-        <SolveBtn parentRef={ref} wantedNodes={wantedNodes} start={selectedNode} />
+        <SolveBtn
+          parentRef={ref}
+          wantedNodes={wantedNodes}
+          start={selectedNode}
+        />
       </div>
     </div>
   );

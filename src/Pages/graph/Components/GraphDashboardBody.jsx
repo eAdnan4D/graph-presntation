@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Empty from "./Empty";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 import GraphError from "./GraphError";
 
 function GraphDashboardBody({ filter }) {

@@ -6,24 +6,24 @@ import {
   useRef,
   useState,
 } from "react";
-
-import Edges from "./Edges";
-import Empty from "./Empty";
-import GraphDashboard from "./GraphDashboard";
-import GraphError from "./GraphError";
-import NextSnapshot from "./NextSnapshot";
-import Nodes from "./Nodes";
-import PrevSnapshot from "./PrevSnapshot";
-import Relation from "./Relation";
-import SearchNodes from "./SearchNodes";
-import Solve from "./Solve";
+import "./graph.css";
+import Edges from "./Components/Edges";
+import Empty from "./Components/Empty";
+import GraphDashboard from "./Components/GraphDashboard";
+import GraphError from "./Components/GraphError";
+import NextSnapshot from "./Components/NextSnapshot";
+import Nodes from "./Components/Nodes";
+import PrevSnapshot from "./Components/PrevSnapshot";
+import Relation from "./Components/Relation";
+import SearchNodes from "./Components/SearchNodes";
+import Solve from "./Components/Solve";
 import {
   distributeEdges,
   distributeNodes,
   isDirect,
   isSameAsReverse,
   isValidGraph,
-} from "./helper";
+} from "./Components/helper";
 
 export const Context = createContext({
   graph: null,
@@ -448,7 +448,11 @@ function MutateGraph() {
         {/* {content} */}
         {!Object.keys(graph).length ? "Create graph" : "Modify graph"}
       </button>
-      <button className="traversal-btn" onClick={handleShowSolve} disabled={showDashboard || showSolve}>
+      <button
+        className="traversal-btn"
+        onClick={handleShowSolve}
+        disabled={showDashboard || showSolve}
+      >
         Traversal
       </button>
       <button

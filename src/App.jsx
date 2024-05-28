@@ -1,4 +1,5 @@
-import Graph from "./graph/Graph";
+import { Route, Routes } from "react-router";
+import Graph from "./Pages/graph/Graph";
 
 const fullGraph = {
   A: [
@@ -445,14 +446,29 @@ function App() {
   }
 
   return (
-    <div>
-      <Graph solveFn={solveFn}>
-        <Graph.GraphFilter />
-        <Graph.Presentation />
-        <Graph.NodesList />
-        <Graph.MutateGraph />
-      </Graph>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div>
+            <h1>this is the homepage</h1>
+          </div>
+        }
+      ></Route>
+      <Route
+        path="/graph"
+        element={
+          <div>
+            <Graph solveFn={solveFn}>
+              <Graph.GraphFilter />
+              <Graph.Presentation />
+              <Graph.NodesList />
+              <Graph.MutateGraph />
+            </Graph>
+          </div>
+        }
+      ></Route>
+    </Routes>
   );
 }
 

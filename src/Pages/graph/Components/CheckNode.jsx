@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 
 function CheckNode({ node, dis, onCheck, val }) {
   const { isSolving } = useContext(Context);

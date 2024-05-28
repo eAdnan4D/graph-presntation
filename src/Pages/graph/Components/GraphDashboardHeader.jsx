@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 import Header from "./Header";
 
 function GraphDashboardHeader({ onClose, onType, search }) {

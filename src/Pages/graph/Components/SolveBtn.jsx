@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 
 function SolveBtn({ parentRef, wantedNodes, start }) {
   const { solveFn, setPath, isSolving, setIsSolving, setShowSolve } =

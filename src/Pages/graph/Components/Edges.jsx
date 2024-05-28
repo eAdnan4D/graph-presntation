@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Edge from "./Edge";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 
 // Help us draw all edges
 function Edges() {

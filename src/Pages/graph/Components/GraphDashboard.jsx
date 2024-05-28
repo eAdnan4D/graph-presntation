@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import GraphDashboardBody from "./GraphDashboardBody";
 import GraphDashboardHeader from "./GraphDashboardHeader";
-import { Context } from "./Graph";
+import { Context } from "../Graph";
 
 // Really graph dashboard
 function GraphDashboard() {
