@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router";
-import Graph from "./Pages/graph/Graph";
+import Graph from "./Pages/Parents/Graph";
+import Home from "./Pages/Parents/Home";
+import Form from "./Pages/Parents/Form";
 
 const fullGraph = {
   A: [
@@ -447,14 +449,8 @@ function App() {
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <div>
-            <h1>this is the homepage</h1>
-          </div>
-        }
-      ></Route>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/form" element={<Form />}></Route>
       <Route
         path="/graph"
         element={

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "../Graph";
+import { Context } from "../../Parents/Graph";
 import Node from "./Node";
 
 function Nodes() {

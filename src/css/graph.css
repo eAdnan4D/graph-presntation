@@ -28,9 +28,9 @@
   color: var(--color-dark-200);
 }
 
-body {
+/* body {
   padding: 3rem 0rem;
-}
+} */
 
 /* Util */
 .graph-err {

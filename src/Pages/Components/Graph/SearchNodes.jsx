@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "../Graph";
+import { Context } from "../../Parents/Graph";
 
 // Resbonsible about searching for edges in the nodes list
 function SearchNodes({ dis = false, setSearch, search }) {

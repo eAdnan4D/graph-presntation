@@ -6,24 +6,24 @@ import {
   useRef,
   useState,
 } from "react";
-import "./graph.css";
-import Edges from "./Components/Edges";
-import Empty from "./Components/Empty";
-import GraphDashboard from "./Components/GraphDashboard";
-import GraphError from "./Components/GraphError";
-import NextSnapshot from "./Components/NextSnapshot";
-import Nodes from "./Components/Nodes";
-import PrevSnapshot from "./Components/PrevSnapshot";
-import Relation from "./Components/Relation";
-import SearchNodes from "./Components/SearchNodes";
-import Solve from "./Components/Solve";
+import "../../css/graph.css";
+import Edges from "../Components/Graph/Edges";
+import Empty from "../Components/Graph/Empty";
+import GraphDashboard from "../Components/Graph/GraphDashboard";
+import GraphError from "../Components/Graph/GraphError";
+import NextSnapshot from "../Components/Graph/NextSnapshot";
+import Nodes from "../Components/Graph/Nodes";
+import PrevSnapshot from "../Components/Graph/PrevSnapshot";
+import Relation from "../Components/Graph/Relation";
+import SearchNodes from "../Components/Graph/SearchNodes";
+import Solve from "../Components/Graph/Solve";
 import {
   distributeEdges,
   distributeNodes,
   isDirect,
   isSameAsReverse,
   isValidGraph,
-} from "./Components/helper";
+} from "../Components/Graph/helper";
 
 export const Context = createContext({
   graph: null,
