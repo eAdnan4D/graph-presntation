@@ -24,7 +24,7 @@ const Home = () => {
           </div>
           <div className="bg-blue-400 flex justify-center items-center rounded-lg w-1/3 p-4">
             <Card className="w-11/12 py-4">
-              <h3 className="text-center font-bold">Yasmeen</h3>
+              <h3 className="text-center font-bold">Aisha</h3>
               <h3 className="text-center font-bold">xxxxxx</h3>
             </Card>{" "}
           </div>
