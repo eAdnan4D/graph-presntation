@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const FormHook = () => {
   const [stage, setStage] = useState(0);
+  const [level, setLevel] = useState(0);
+  const [check, setCheck] = useState(false);
 
   const [trucks, setTrucks] = useState([]);
   const [goods, setGoods] = useState([]);
@@ -44,7 +46,8 @@ const FormHook = () => {
       const updatedState = [...prevState];
       updatedState[index] = {
         ...updatedState[index],
-        capacity: Number(event.target.value),
+        capacity:
+          Number(event.target.value) > 1 ? Number(event.target.value) : 1,
       };
       return updatedState;
     });
@@ -86,7 +89,7 @@ const FormHook = () => {
       const updatedState = [...prevState];
       updatedState[index] = {
         ...updatedState[index],
-        weight: Number(event.target.value),
+        weight: Number(event.target.value) > 1 ? Number(event.target.value) : 1,
       };
       return updatedState;
     });
@@ -100,7 +103,8 @@ const FormHook = () => {
       const updatedState = [...prevState];
       updatedState[index] = {
         ...updatedState[index],
-        quantity: Number(event.target.value),
+        quantity:
+          Number(event.target.value) > 1 ? Number(event.target.value) : 1,
       };
       return updatedState;
     });
@@ -119,6 +123,9 @@ const FormHook = () => {
   };
 
   return [
+    check,
+    level,
+    setLevel,
     stage,
     setStage,
     trucks,

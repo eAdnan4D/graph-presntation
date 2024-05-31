@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router";
 import Graph from "./Pages/Parents/Graph";
 import Home from "./Pages/Parents/Home";
 import Form from "./Pages/Parents/Form";
+import Header from "./Pages/Components/Header";
+import { Suspense } from "react";
+import { MoonLoader, PuffLoader } from "react-spinners";
 
 const fullGraph = {
   A: [
@@ -448,23 +451,34 @@ function App() {
   }
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/form" element={<Form />}></Route>
-      <Route
-        path="/graph"
-        element={
-          <div>
-            <Graph solveFn={solveFn}>
-              <Graph.GraphFilter />
-              <Graph.Presentation />
-              <Graph.NodesList />
-              <Graph.MutateGraph />
-            </Graph>
+    <div>
+      <Header />
+      <Suspense
+        fallback={
+          <div className="w-full h-screen bg-white top-0 bottom-0 absolute">
+            <PuffLoader className="!fill-blue-600 size-16" />
           </div>
         }
-      ></Route>
-    </Routes>
+      >
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/form" element={<Form />}></Route>
+          <Route
+            path="/graph"
+            element={
+              <div>
+                <Graph solveFn={solveFn}>
+                  <Graph.GraphFilter />
+                  <Graph.Presentation />
+                  <Graph.NodesList />
+                  <Graph.MutateGraph />
+                </Graph>
+              </div>
+            }
+          ></Route>
+        </Routes>
+      </Suspense>
+    </div>
   );
 }
 
