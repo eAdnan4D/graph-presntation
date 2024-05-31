@@ -13,31 +13,31 @@ const Home = () => {
           <div className="bg-blue-400 flex justify-center items-center rounded-lg w-1/3 p-4">
             <Card className="w-11/12 py-4">
               <h3 className="text-center font-bold">Osama</h3>
-              <h3 className="text-center font-bold">xxxxxx</h3>
+              <h3 className="text-center font-bold">osama_167541</h3>
             </Card>
           </div>
           <div className="bg-blue-400 flex justify-center items-center rounded-lg w-1/3 p-4">
             <Card className="w-11/12 py-4">
               <h3 className="text-center font-bold">Adnan Ali Al-As&apos;ad</h3>
-              <h3 className="text-center font-bold">189704</h3>
+              <h3 className="text-center font-bold">adnan_189704</h3>
             </Card>{" "}
           </div>
           <div className="bg-blue-400 flex justify-center items-center rounded-lg w-1/3 p-4">
             <Card className="w-11/12 py-4">
-              <h3 className="text-center font-bold">Aisha</h3>
-              <h3 className="text-center font-bold">xxxxxx</h3>
+              <h3 className="text-center font-bold">Aisha Shamoot</h3>
+              <h3 className="text-center font-bold">aisha_shamoot_159220</h3>
             </Card>{" "}
           </div>
           <div className="bg-blue-400 flex justify-center items-center rounded-lg w-1/3 p-4">
             <Card className="w-11/12 py-4">
               <h3 className="text-center font-bold">Laila Hussam Said</h3>
-              <h3 className="text-center font-bold">204265</h3>
+              <h3 className="text-center font-bold">laila_204265</h3>
             </Card>{" "}
           </div>
           <div className="bg-blue-400 flex justify-center items-center rounded-lg w-1/3 p-4">
             <Card className="w-11/12 py-4">
-              <h3 className="text-center font-bold">Raghad</h3>
-              <h3 className="text-center font-bold">xxxxxx</h3>
+              <h3 className="text-center font-bold">Raghad Kamal Alden</h3>
+              <h3 className="text-center font-bold">raghad_120170</h3>
             </Card>{" "}
           </div>
         </div>
