@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router";
-import Graph from "./Pages/Parents/Graph";
 import Home from "./Pages/Parents/Home";
-import Form from "./Pages/Parents/Form";
 import Header from "./Pages/Components/Header";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { MoonLoader, PuffLoader } from "react-spinners";
+const Graph = lazy(() => import("./Pages/Parents/Graph"));
+const Form = lazy(() => import("./Pages/Parents/Form"));
 
 const fullGraph = {
   A: [
