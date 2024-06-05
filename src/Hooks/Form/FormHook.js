@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FormHook = () => {
   const [stage, setStage] = useState(0);
@@ -121,6 +121,17 @@ const FormHook = () => {
   const handleDeleteAllGoods = () => {
     setGoods([]);
   };
+
+  useEffect(() => {
+    if (
+      Array.isArray(trucks) &&
+      Array.isArray(goods) &&
+      trucks.length > 0 &&
+      goods.length > 0
+    ) {
+      setCheck(true);
+    }
+  }, [trucks, goods]);
 
   return [
     check,

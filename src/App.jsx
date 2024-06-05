@@ -451,11 +451,11 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="relative overflow-y-hidden overflow-x-hidden">
       <Header />
       <Suspense
         fallback={
-          <div className="w-full h-screen bg-white top-0 bottom-0 absolute">
+          <div className="w-full h-screen bg-white top-0 bottom-0 absolute flex justify-center items-center ">
             <PuffLoader className="!fill-blue-600 size-16" />
           </div>
         }

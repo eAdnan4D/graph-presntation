@@ -37,14 +37,14 @@ const GoodsForm = ({
             </div>
           </FormControl>
         </FormGroup>
-        <Card className="!shadow-sm mt-5 !bg-blue-300 px-5 py-3 min-w-[50rem]">
-          <div>
+        <Card className="!shadow-sm mt-5 !bg-blue-300 px-5 py-3 min-w-[50dvw]">
+          <div className="flex flex-col gap-2 justify-between items-stretch flex-wrap max-h-[50dvh] overflow-x-scroll">
             {Array.isArray(goods) &&
               goods.map((item, index) => {
                 return (
                   <Card
                     key={index}
-                    className="px-5 py-3 flex flex-row justify-between items-center mt-5"
+                    className="px-5 py-3 flex flex-row justify-between items-center my-5"
                   >
                     <div className="flex flex-row gap-5">
                       <div>
